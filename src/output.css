@@ -201,9 +201,6 @@
   .my-4 {
     margin-block: calc(var(--spacing) * 4);
   }
-  .mt-1 {
-    margin-top: calc(var(--spacing) * 1);
-  }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
@@ -216,23 +213,23 @@
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
   }
-  .mt-26 {
-    margin-top: calc(var(--spacing) * 26);
+  .mb-4 {
+    margin-bottom: calc(var(--spacing) * 4);
+  }
+  .mb-6 {
+    margin-bottom: calc(var(--spacing) * 6);
   }
   .flex {
     display: flex;
   }
+  .grid {
+    display: grid;
+  }
   .table {
     display: table;
   }
-  .w-2 {
-    width: calc(var(--spacing) * 2);
-  }
   .w-12 {
     width: calc(var(--spacing) * 12);
-  }
-  .w-20 {
-    width: calc(var(--spacing) * 20);
   }
   .w-32 {
     width: calc(var(--spacing) * 32);
@@ -240,14 +237,14 @@
   .w-48 {
     width: calc(var(--spacing) * 48);
   }
-  .flex-3 {
-    flex: 3;
-  }
   .border-collapse {
     border-collapse: collapse;
   }
   .resize {
     resize: both;
+  }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .flex-col {
     flex-direction: column;
@@ -280,20 +277,18 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .border-y {
-    border-block-style: var(--tw-border-style);
-    border-block-width: 1px;
-  }
   .border-y-0 {
     border-block-style: var(--tw-border-style);
     border-block-width: 0px;
   }
-  .border-t {
-    border-top-style: var(--tw-border-style);
-    border-top-width: 1px;
+  .border-gray-600 {
+    border-color: var(--color-gray-600);
   }
-  .border-gray-800 {
-    border-color: var(--color-gray-800);
+  .border-gray-600\/30 {
+    border-color: color-mix(in srgb, oklch(44.6% 0.03 256.802) 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-gray-600) 30%, transparent);
+    }
   }
   .border-gray-900 {
     border-color: var(--color-gray-900);
@@ -306,21 +301,6 @@
     @supports (color: color-mix(in lab, red, red)) {
       border-inline-color: color-mix(in oklab, var(--color-gray-600) 30%, transparent);
     }
-  }
-  .border-x-gray-600\/40 {
-    border-inline-color: color-mix(in srgb, oklch(44.6% 0.03 256.802) 40%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      border-inline-color: color-mix(in oklab, var(--color-gray-600) 40%, transparent);
-    }
-  }
-  .border-x-gray-600\/50 {
-    border-inline-color: color-mix(in srgb, oklch(44.6% 0.03 256.802) 50%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      border-inline-color: color-mix(in oklab, var(--color-gray-600) 50%, transparent);
-    }
-  }
-  .border-y-gray-600 {
-    border-block-color: var(--color-gray-600);
   }
   .bg-\[\#5e575780\] {
     background-color: #5e575780;
@@ -340,65 +320,20 @@
   .bg-\[\#00000080\]\/50 {
     background-color: color-mix(in oklab, #00000080 50%, transparent);
   }
-  .bg-\[\#\] {
-    background-color: #;
-  }
   .bg-black {
     background-color: var(--color-black);
-  }
-  .bg-\[url\(\'\'\)\] {
-    background-image: url('');
-  }
-  .bg-\[url\(\'\/img\/\'\)\] {
-    background-image: url('/img/');
-  }
-  .bg-\[url\(\'\/img\/Servic\.jpeg\'\)\] {
-    background-image: url('/img/Servic.jpeg');
-  }
-  .bg-\[url\(\'\/img\/Service-logo\.jpeg\'\)\] {
-    background-image: url('/img/Service-logo.jpeg');
-  }
-  .bg-\[url\(\'\/img\/Service\.jpeg\'\)\] {
-    background-image: url('/img/Service.jpeg');
-  }
-  .bg-\[url\(\'\/img\/herobg\.\'\)\] {
-    background-image: url('/img/herobg.');
   }
   .bg-\[url\(\'\/img\/herobg\.png\'\)\] {
     background-image: url('/img/herobg.png');
   }
-  .bg-\[url\(\'\/img\/ser\'\)\] {
-    background-image: url('/img/ser');
-  }
-  .bg-\[url\(\'\/img\/servic\'\)\] {
-    background-image: url('/img/servic');
-  }
-  .bg-\[url\(\'\/img\/service\'\)\] {
-    background-image: url('/img/service');
-  }
   .bg-\[url\(\'\/img\/service\.jpeg\'\)\] {
     background-image: url('/img/service.jpeg');
-  }
-  .bg-\[url\(\'img\/Service-logo\.jpeg\'\)\] {
-    background-image: url('img/Service-logo.jpeg');
-  }
-  .bg-contain {
-    background-size: contain;
   }
   .bg-cover {
     background-size: cover;
   }
   .bg-no-repeat {
     background-repeat: no-repeat;
-  }
-  .p-4 {
-    padding: calc(var(--spacing) * 4);
-  }
-  .p-5 {
-    padding: calc(var(--spacing) * 5);
-  }
-  .p-6 {
-    padding: calc(var(--spacing) * 6);
   }
   .p-8 {
     padding: calc(var(--spacing) * 8);
@@ -433,24 +368,11 @@
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
   }
-  .py-20 {
-    padding-block: calc(var(--spacing) * 20);
-  }
-  .pt-10 {
-    padding-top: calc(var(--spacing) * 10);
-  }
-  .pt-20 {
-    padding-top: calc(var(--spacing) * 20);
-  }
   .pb-40 {
     padding-bottom: calc(var(--spacing) * 40);
   }
   .text-center {
     text-align: center;
-  }
-  .text-2xl {
-    font-size: var(--text-2xl);
-    line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
   .text-3xl {
     font-size: var(--text-3xl);
@@ -484,9 +406,6 @@
   }
   .underline {
     text-decoration-line: underline;
-  }
-  .bg-blend-darken {
-    background-blend-mode: darken;
   }
   .outline {
     outline-style: var(--tw-outline-style);
