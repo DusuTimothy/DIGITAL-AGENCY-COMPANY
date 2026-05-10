@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Digital Agency Company</title>
   <link rel="stylesheet" href="src/output.css">
 </head>
-<body class="bg-[#262626] mx-20">
+
+<body class="bg-black mx-20 text-white text-xs">
 
   <!-- HEADER SECTION -->
 
-  <header class="flex items-center justify-between text-white text-xs my-4">
+  <header class="bg-[#5e575780]/50 flex items-center justify-between text-white text-xs my-4">
     <div class="w-32"><img src="img/image.png" alt="logo"></div>
     <nav class="flex items-center font-medium">
       <a href="#Home" class="hover:bg-[#5e575780] px-4 py-2 rounded-sm">Home</a>
@@ -25,14 +27,101 @@
 
   <main>
 
-  <!-- HERO SECTION -->
+    <!-- HERO SECTION -->
 
-  <section>
-    <h1>
-      A Digital Product Studio
-    </h1>
-  </section>
-    
+    <section class="bg-[url('/img/herobg.png')] bg-no-repeat mt-20 pb-40">
+      <h1 class="text-4xl font-bold text-center">
+        A Digital Product Studio <br> that will work
+      </h1>
+      <aside>
+        <nav class="bg-[#00000080]/50 flex items-center justify-center gap-2 mt-4 mx-80 rounded-sm py-3">
+          <span>For </span><a href="#Startups" class="bg-[#5e575780] px-2 py-1 rounded-sm">Startups</a>
+          <span> . </span><a href="#Enterprise Leaders" class="bg-[#5e575780] px-2 py-1 rounded-sm">Enterprise
+            Leaders</a>
+          <span> . </span><a href="#Media & Publishers" class="bg-[#5e575780] px-2 py-1 rounded-sm">Media &
+            Publishers</a>
+          <span> and </span><a href="#Social Good" class="bg-[#5e575780] px-2 py-1 rounded-sm">Social Good</a>
+        </nav>
+      </aside>
+      <aside class="flex justify-center items-center gap-3 mt-10">
+        <button class="bg-[#00000080] font-medium border border-gray-900 py-3.5 px-6 rounded-lg"><a
+            href="#Our Works">Our Works</a></button>
+        <button class="bg-[#9EFF00] py-3.5 px-5 text-black rounded-lg"><a href="#Contact Us">Contact Us</a></button>
+      </aside>
+    </section>
+
+    <!-- PARTNERS SECTION -->
+
+    <section class="bg-[#5e575780]/30 relative">
+      <aside class="flex justify-center">
+        <div class="absolute -top-4 bg-black border border-gray-900 rounded-full font-medium text-center py-2 w-48">
+          Trusted By 250+
+          Companies</div>
+        <div></div>
+      </aside>
+      <aside class="flex justify-between py-5">
+        <img src="img/image copy.png" alt="Zapier" class="w-32">
+        <img src="img/image copy 2.png" alt="Sportify" class="w-32">
+        <img src="img/image copy 3.png" alt="zoom" class="w-32">
+        <img src="img/image copy 4.png" alt="slack" class="w-32">
+        <img src="img/image copy 5.png" alt="amazon" class="w-32">
+        <img src="img/image copy 6.png" alt="Adobe" class="w-32">
+      </aside>
+    </section>
+
+    <!-- SERVICES SECTION -->
+
+    <section>
+      <aside class="bg-[url('/img/service.jpeg')] bg-cover bg-no-repeat py-16">
+        <h2 class="text-3xl text-center font-medium">Our Services</h2>
+        <p class="text-center">Transform your brand with our innovative digital solutions that captivate and engage your
+          audience</p>
+      </aside>
+
+      <!-- Cards section -->
+      <aside class="flex bg-[#5e575780]/30">
+        <div class="flex flex-col p-8">
+          <img src="img/image copy 7.png" alt="design logo" class="w-12">
+          <h3 class="text-xl font-medium my-3">Design</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quae id, in ipsum, possimus quia corporis
+            suscipit nobis, doloremque unde nulla totam magni dignissimos porro itaque hic neque commodi illo!
+            Adipisci voluptatibus dicta tempore iure illum dolore inventore dolorum, saepe officia quae sunt earum
+          </p>
+          <button class="bg-[#5e575780] rounded-sm font-medium py-2 mt-16"><a href="#Learn More">Learn More</a></button>
+        </div>
+
+        <div class="flex flex-col border border-y-0 border-x-gray-600/30 p-8">
+          <img src="img/image copy 8.png" alt="Engineering logo" class="w-12">
+          <h3 class="text-xl font-medium my-3">Engineering</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quae id, in ipsum, possimus quia corporis
+            suscipit nobis, doloremque unde nulla totam magni dignissimos porro itaque hic neque commodi illo!
+            Adipisci voluptatibus dicta tempore iure illum dolore inventore dolorum, saepe officia quae sunt earum
+          </p>
+          <button class="bg-[#5e575780] rounded-sm font-medium py-2 mt-16"><a href="#Learn More">Learn More</a></button>
+        </div>
+
+        <div class="flex flex-col p-8">
+          <img src="img/image copy 9.png" alt="project logo" class="w-12">
+          <h3 class="text-xl font-medium my-3">Project Management</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quae id, in ipsum, possimus quia corporis
+            suscipit nobis, doloremque unde nulla totam magni dignissimos porro itaque hic neque commodi illo!
+            Adipisci voluptatibus dicta tempore iure illum dolore inventore dolorum, saepe officia quae sunt earum
+          </p>
+          <button class="bg-[#5e575780] rounded-sm font-medium py-2 mt-16"><a href="#Learn More">Learn More</a></button>
+        </div>
+      </aside>
+    </section>
+
+    <!-- CHOOSE SECTION -->
+
+    <section>
+      <aside class="bg-[url('/img/service.jpeg')] bg-cover bg-no-repeat py-16">
+        <h2 class="text-3xl text-center font-medium">Why Choose SquareUp?</h2>
+        <p class="text-center">Experience excellence in digital craftsmanship. Transform your brand with our innovative digital solutions that captivate and engage your
+          audience</p>
+      </aside>
+    </section>
   </main>
 </body>
+
 </html>
